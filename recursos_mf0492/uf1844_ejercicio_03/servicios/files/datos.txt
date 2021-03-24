@@ -1,0 +1,5 @@
+Pais: sdfg; Capital: ; Poblacion: 66;
+Pais: dsfgsgf;Capital: ;Poblacion: 678;
+Pais: dsfgsgf;Capital: ;Poblacion: 6789;
+Pais: dsfgsgf;Capital: ;Poblacion: 67890;
+Pais: sjsgddh;Capital: uilljklhjjkl;Poblacion: 67987896;

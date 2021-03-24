@@ -1,16 +1,15 @@
 <?php
-	//recuperar los datos de la petición y validarlos
-		
-	//crear una variable con los datos del formulario en formato csv (separados por comas) 
+//recuperar los datos de la petición y validarlos
+$pais = $_POST['pais'];
+$capital = $_POST['capital'];
+$poblacion = $_POST['poblacion'];
 
-	//guardar datos en formato csv
-		
-	//escribir la fila en el fichero sin que se pierda el contenido previo (añadiendo un salto de linea al final)
-		
-	//confeccionar el mensaje de respuesta (en formato texto)
-	
-	//en caso de error confeccionar el mensaje de error (en formato texto)
-
-	//generar la respuesta de la petición ajax
-	
-?>
+if ($pais == '' || $capital == '') {
+	echo 'Pais y Capital obligatorio';
+}
+if (!ctype_digit($poblacion) || $poblacion <= 0) {
+	echo 'Poblacion debe ser numerica y mayor que cero';
+}
+$csv = "Pais: $pais;Capital: $capital;Poblacion: $poblacion;\n";
+file_put_contents('files/datos.txt', $csv, FILE_APPEND);
+echo 'entry saved';
