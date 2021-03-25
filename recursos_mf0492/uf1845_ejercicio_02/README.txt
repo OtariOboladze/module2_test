@@ -1,0 +1,1 @@
+table vacia, no hay FK, voy a utilizar DB de primera convocatoria para los ultimos 4 preguntas
