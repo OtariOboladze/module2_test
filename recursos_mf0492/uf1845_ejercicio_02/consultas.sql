@@ -1,6 +1,10 @@
 -- Consulta 1: Nom i cognoms de tots els usuaris ordenats per cognoms (6 registres) 
 
+SELECT * FROM `usuarios` ORDER BY apellidos DESC;
+
 -- Consulta 2: Número total d’usuaris amb el email sense informar (2)
+
+SELECT COUNT(*) FROM usuarios WHERE email IS NULL;
 
 -- Consulta 3: Usuaris on la segona lletra del seu cognom sigui la lletra 'a' (2 registres)
 

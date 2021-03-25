@@ -2,7 +2,8 @@
 $nota = rand(0, 10);
 $calificacion = null;
 
-function test($n){
+function test($n)
+{
 	if ($n < 5) {
 		$c = 'Suspenso';
 	} else if ($n == 6 || $n == 7) {
@@ -41,10 +42,10 @@ $calificacion = test($nota);
 <body>
 	<h2>Funciones</h2>
 	<div>
-		<span>Nota: <?=$nota?></span>
+		<span>Nota: <?= $nota ?></span>
 	</div>
 	<div>
-		<span>Calificación: <?=$calificacion?></span>
+		<span>Calificación: <?= $calificacion ?></span>
 	</div>
 </body>
 
