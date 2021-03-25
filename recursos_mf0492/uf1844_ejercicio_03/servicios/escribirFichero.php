@@ -12,4 +12,5 @@ if (!ctype_digit($poblacion) || $poblacion <= 0) {
 }
 $csv = "Pais: $pais;Capital: $capital;Poblacion: $poblacion;\n";
 file_put_contents('files/datos.txt', $csv, FILE_APPEND);
+
 echo 'entry saved';

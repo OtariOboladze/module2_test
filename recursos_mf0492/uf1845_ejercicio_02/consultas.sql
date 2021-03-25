@@ -8,6 +8,8 @@ SELECT COUNT(*) FROM usuarios WHERE email IS NULL;
 
 -- Consulta 3: Usuaris on la segona lletra del seu cognom sigui la lletra 'a' (2 registres)
 
+SELECT * FROM `usuarios` WHERE apellidos LIKE '_a%';
+
 -- Consulta 4: Nom i cognoms dels usuaris que han enviat comentaris. Hauria de sortir una fila per cada usuari diferent (4 registres o 7 registres sense agrupar)
 
 -- Consulta 5: Nom i cognoms dels usuaris que no han enviat cap comentari (2 registres)
